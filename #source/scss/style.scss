@@ -1,0 +1,151 @@
+%wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: black;
+    &__wrapper {
+        @extend %wrapper;
+        padding-top: 30px;
+    }
+    &__title {
+        color: white;
+        font-size: 55px;
+        font-weight: 500;
+    }
+    &__desc {
+        color: white;
+        margin-top: 40px;
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left-column {
+        width: 500px;
+        text-align: center;
+        margin-top: 340px;
+    }
+    &__right-column {
+        align-self: flex-end;
+    }
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-left: 25px;
+    }
+    &__link {
+        text-decoration: none;
+        color: white;
+        height: 25px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+}
+
+.features {
+    &__wrapper {
+        @extend %wrapper;
+        margin-bottom: 160px;
+    }
+    &__title_hidden {
+        display: none;
+    }
+    &__list {
+        display: flex;
+    }
+    &__item {
+        width: 390px;
+        padding: 55px;
+        box-sizing: border-box;
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+    &__item-title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+    &__item-desc {
+        color: #585858;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &__item-link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 13px;
+        color: black;
+    }
+}
+
+.about {
+    &__wrapper {
+        @extend %wrapper;
+    }
+    &__container {
+        margin-left: 570px;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    &__text {
+        color: #585858;
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+}
+
+.services {
+    text-align: center;
+    &__wrapper {
+        @extend %wrapper;
+    }
+    &__title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    &__desc {
+        color: #262626;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 370px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        margin-top: 30px;
+    }
+}
